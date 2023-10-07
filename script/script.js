@@ -112,9 +112,9 @@ function start(cells) {
          if (this.textContent == '' & titleWinner.textContent == '') {
             this.textContent = [playerOne.textContent, playerTwo.textContent][i % 2];
             if (this.textContent == playerOne.textContent) {
-               timeActive = 0;
-            } else {
                timeActive = 1;
+            } else {
+               timeActive = 0;
             }
 
             if (isVictory(cells)) {
